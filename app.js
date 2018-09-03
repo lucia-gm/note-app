@@ -16,7 +16,8 @@ function addNote() {
 
   note.classList.add('note');
   note.classList.add(form.color.value);
-  note.innerHTML = text;
+  note.innerHTML = `<div class='note-text'>${text}</div>`;
+  deleteButton.classList.add('note-delete');
   deleteButton.innerHTML = '&times;';
 
   note.appendChild(deleteButton);  

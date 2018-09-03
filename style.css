@@ -39,6 +39,11 @@ textarea {
   position: relative;
 }
 
+.note-text {
+  height: 100%;
+  overflow-y: scroll;
+}
+
 .note::after {
   content: '';
   position: absolute;
