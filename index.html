@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Note Taking App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Note Taking App</h1>
+  <form>
+    <textarea name="formNoteText" id="formNoteText" cols="60" rows="10" maxlength="100"></textarea>
+    <select name="formColor" id="formColor">
+      <option value="none">Select color</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="yellow">Yellow</option>
+    </select>
+    <button id="formAddButton">Add note</button>
+  </form>
+
+  <div id="notes"></div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
