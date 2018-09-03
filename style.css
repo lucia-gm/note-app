@@ -1,3 +1,4 @@
+/* Global styles */
 html, * {
   box-sizing: border-box;
 }
@@ -10,10 +11,16 @@ body {
   font: 1.8rem/1.56 sans-serif;
   color: #333;
   margin: 0;
-  padding: 2.4rem;
+  padding: 0 3.2rem 2.4rem;
   background: #f5f5f5;
 }
 
+textarea {
+  display: block;
+}
+
+
+/* Note Styles */
 #notes {
   display: flex;
   flex-wrap: wrap;
@@ -32,17 +39,27 @@ body {
   position: relative;
 }
 
-.note.red {
+.note::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.8rem;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.note.red::after {
   background-color: lightcoral;
 }
 
-.note.blue {
+.note.blue::after {
   background-color: lightskyblue;
 }
-.note.green {
+.note.green::after {
   background-color: lightgreen;
 }
-.note.yellow {
+.note.yellow::after {
   background-color: gold;
 }
 
@@ -61,8 +78,4 @@ body {
   color: #333;
   background: #f5f5f5;
   cursor: pointer;
-}
-
-textarea {
-  display: block;
 }
