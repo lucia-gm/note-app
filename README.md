@@ -2,6 +2,8 @@
 
 A minimal note application using Vanilla JavaScript.
 
+[View online demo](http://luciagm.net/note-app/)
+
 ### To be improved
 - Persistent notes saved in local storage
 - Form style
